@@ -3,7 +3,6 @@ import TreePrompt from 'inquirer-tree-prompt';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import tree from 'tree-node-cli';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -124,10 +123,27 @@ function getAllFiles(items) {
 }
 
 function getProjectStructure(directory) {
-  return tree(directory, {
-    allFiles: true,
-    exclude: [/node_modules/, /\.git/],
-  });
+  const structure = { name: path.basename(directory), type: 'directory', children: [] };
+  
+  function buildStructure(dir, node) {
+    const items = fs.readdirSync(dir, { withFileTypes: true });
+    for (const item of items) {
+      if (item.name === 'node_modules' || item.name === '.git') continue;
+      
+      const fullPath = path.join(dir, item.name);
+      const newNode = { name: item.name, type: item.isDirectory() ? 'directory' : 'file' };
+      
+      if (item.isDirectory()) {
+        newNode.children = [];
+        buildStructure(fullPath, newNode);
+      }
+      
+      node.children.push(newNode);
+    }
+  }
+
+  buildStructure(directory, structure);
+  return structure;
 }
 
 function getFileContent(filePath) {
@@ -144,26 +160,22 @@ async function main() {
   const selectedItems = await selectFiles(rootDirectory);
   const selectedFiles = getAllFiles(selectedItems);
 
-  let output = '# Информация о проекте\n\n';
+  let projectInfo = {
+    rootDirectory: rootDirectory,
+    projectStructure: getProjectStructure(rootDirectory),
+    selectedFiles: []
+  };
 
-  output += `## Головная папка проекта: ${rootDirectory}\n\n`;
-
-  output += '## Структура проекта\n\n';
-  output += '```\n';
-  output += getProjectStructure(rootDirectory);
-  output += '```\n\n';
-
-  output += '## Содержимое выбранных файлов\n\n';
   for (const file of selectedFiles) {
-    output += `### ${file}\n\n`;
-    output += '```\n';
-    output += getFileContent(file);
-    output += '```\n\n';
+    projectInfo.selectedFiles.push({
+      path: file,
+      content: getFileContent(file)
+    });
   }
 
   const projectName = path.basename(rootDirectory);
-  const outputPath = path.join(process.cwd(), `${projectName}_info.md`);
-  fs.writeFileSync(outputPath, output);
+  const outputPath = path.join(process.cwd(), `${projectName}_info.json`);
+  fs.writeFileSync(outputPath, JSON.stringify(projectInfo, null, 2));
 
   console.log(`Информация о проекте сохранена в файл: ${outputPath}`);
 }
