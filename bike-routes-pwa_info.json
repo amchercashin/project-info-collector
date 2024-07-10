@@ -1,0 +1,449 @@
+{
+  "rootDirectory": "/Users/amchercashin/bike-routes-pwa",
+  "projectStructure": {
+    "name": "bike-routes-pwa",
+    "type": "directory",
+    "children": [
+      {
+        "name": ".DS_Store",
+        "type": "file"
+      },
+      {
+        "name": ".gitignore",
+        "type": "file"
+      },
+      {
+        "name": "build",
+        "type": "directory",
+        "children": [
+          {
+            "name": ".DS_Store",
+            "type": "file"
+          },
+          {
+            "name": "asset-manifest.json",
+            "type": "file"
+          },
+          {
+            "name": "data",
+            "type": "directory",
+            "children": [
+              {
+                "name": ".DS_Store",
+                "type": "file"
+              },
+              {
+                "name": "routes",
+                "type": "directory",
+                "children": [
+                  {
+                    "name": ".DS_Store",
+                    "type": "file"
+                  },
+                  {
+                    "name": "1.kml",
+                    "type": "file"
+                  },
+                  {
+                    "name": "1.txt",
+                    "type": "file"
+                  },
+                  {
+                    "name": "2.kml",
+                    "type": "file"
+                  },
+                  {
+                    "name": "3.kml",
+                    "type": "file"
+                  },
+                  {
+                    "name": "4.kml",
+                    "type": "file"
+                  },
+                  {
+                    "name": "5.kml",
+                    "type": "file"
+                  },
+                  {
+                    "name": "6.kml",
+                    "type": "file"
+                  },
+                  {
+                    "name": "index.json",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "favicon.ico",
+            "type": "file"
+          },
+          {
+            "name": "index.html",
+            "type": "file"
+          },
+          {
+            "name": "logo192.png",
+            "type": "file"
+          },
+          {
+            "name": "logo512.png",
+            "type": "file"
+          },
+          {
+            "name": "manifest.json",
+            "type": "file"
+          },
+          {
+            "name": "robots.txt",
+            "type": "file"
+          },
+          {
+            "name": "service-worker.js",
+            "type": "file"
+          },
+          {
+            "name": "service-worker.js.map",
+            "type": "file"
+          },
+          {
+            "name": "static",
+            "type": "directory",
+            "children": [
+              {
+                "name": "css",
+                "type": "directory",
+                "children": [
+                  {
+                    "name": "237.2a340ed8.chunk.css",
+                    "type": "file"
+                  },
+                  {
+                    "name": "237.2a340ed8.chunk.css.map",
+                    "type": "file"
+                  },
+                  {
+                    "name": "main.e6c13ad2.css",
+                    "type": "file"
+                  },
+                  {
+                    "name": "main.e6c13ad2.css.map",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "js",
+                "type": "directory",
+                "children": [
+                  {
+                    "name": "219.acf9d52d.chunk.js",
+                    "type": "file"
+                  },
+                  {
+                    "name": "219.acf9d52d.chunk.js.LICENSE.txt",
+                    "type": "file"
+                  },
+                  {
+                    "name": "219.acf9d52d.chunk.js.map",
+                    "type": "file"
+                  },
+                  {
+                    "name": "237.fd818b26.chunk.js",
+                    "type": "file"
+                  },
+                  {
+                    "name": "237.fd818b26.chunk.js.map",
+                    "type": "file"
+                  },
+                  {
+                    "name": "832.8fe003bf.chunk.js",
+                    "type": "file"
+                  },
+                  {
+                    "name": "832.8fe003bf.chunk.js.map",
+                    "type": "file"
+                  },
+                  {
+                    "name": "936.dc098d14.chunk.js",
+                    "type": "file"
+                  },
+                  {
+                    "name": "936.dc098d14.chunk.js.map",
+                    "type": "file"
+                  },
+                  {
+                    "name": "main.f64d22cf.js",
+                    "type": "file"
+                  },
+                  {
+                    "name": "main.f64d22cf.js.LICENSE.txt",
+                    "type": "file"
+                  },
+                  {
+                    "name": "main.f64d22cf.js.map",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "package-lock.json",
+        "type": "file"
+      },
+      {
+        "name": "package.json",
+        "type": "file"
+      },
+      {
+        "name": "public",
+        "type": "directory",
+        "children": [
+          {
+            "name": ".DS_Store",
+            "type": "file"
+          },
+          {
+            "name": "data",
+            "type": "directory",
+            "children": [
+              {
+                "name": ".DS_Store",
+                "type": "file"
+              },
+              {
+                "name": "routes",
+                "type": "directory",
+                "children": [
+                  {
+                    "name": ".DS_Store",
+                    "type": "file"
+                  },
+                  {
+                    "name": "1.kml",
+                    "type": "file"
+                  },
+                  {
+                    "name": "1.txt",
+                    "type": "file"
+                  },
+                  {
+                    "name": "2.kml",
+                    "type": "file"
+                  },
+                  {
+                    "name": "3.kml",
+                    "type": "file"
+                  },
+                  {
+                    "name": "4.kml",
+                    "type": "file"
+                  },
+                  {
+                    "name": "5.kml",
+                    "type": "file"
+                  },
+                  {
+                    "name": "6.kml",
+                    "type": "file"
+                  },
+                  {
+                    "name": "index.json",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "favicon.ico",
+            "type": "file"
+          },
+          {
+            "name": "index.html",
+            "type": "file"
+          },
+          {
+            "name": "logo192.png",
+            "type": "file"
+          },
+          {
+            "name": "logo512.png",
+            "type": "file"
+          },
+          {
+            "name": "manifest.json",
+            "type": "file"
+          },
+          {
+            "name": "robots.txt",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "src",
+        "type": "directory",
+        "children": [
+          {
+            "name": ".DS_Store",
+            "type": "file"
+          },
+          {
+            "name": "App.css",
+            "type": "file"
+          },
+          {
+            "name": "App.js",
+            "type": "file"
+          },
+          {
+            "name": "App.test.js",
+            "type": "file"
+          },
+          {
+            "name": "components",
+            "type": "directory",
+            "children": [
+              {
+                "name": "Footer.js",
+                "type": "file"
+              },
+              {
+                "name": "Header.js",
+                "type": "file"
+              },
+              {
+                "name": "Layout.js",
+                "type": "file"
+              },
+              {
+                "name": "RouteList.js",
+                "type": "file"
+              },
+              {
+                "name": "RouteMap.js",
+                "type": "file"
+              },
+              {
+                "name": "UserLocation.js",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "context",
+            "type": "directory",
+            "children": [
+              {
+                "name": "GeolocationContext.js",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "hooks",
+            "type": "directory",
+            "children": [
+              {
+                "name": "useGeolocationAndOrientation.js",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "index.css",
+            "type": "file"
+          },
+          {
+            "name": "index.js",
+            "type": "file"
+          },
+          {
+            "name": "logo.svg",
+            "type": "file"
+          },
+          {
+            "name": "pages",
+            "type": "directory",
+            "children": [
+              {
+                "name": "Catalog.js",
+                "type": "file"
+              },
+              {
+                "name": "Home.js",
+                "type": "file"
+              },
+              {
+                "name": "RouteView.js",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "reportWebVitals.js",
+            "type": "file"
+          },
+          {
+            "name": "service-worker.js",
+            "type": "file"
+          },
+          {
+            "name": "serviceWorkerRegistration.js",
+            "type": "file"
+          },
+          {
+            "name": "services",
+            "type": "directory",
+            "children": [
+              {
+                "name": "routeService.js",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "setupTests.js",
+            "type": "file"
+          },
+          {
+            "name": "styles",
+            "type": "directory",
+            "children": [
+              {
+                "name": "RouteMap.css",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "utils",
+            "type": "directory",
+            "children": [
+              {
+                "name": "indexedDB.js",
+                "type": "file"
+              },
+              {
+                "name": "kmlParser.js",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "SourceCode": [
+    {
+      "path": "/Users/amchercashin/bike-routes-pwa/src/App.js",
+      "content": "import React, { lazy, Suspense } from 'react';\nimport { HashRouter as Router, Route, Routes } from 'react-router-dom';\nimport { GeolocationProvider } from './context/GeolocationContext';\n\nconst Home = lazy(() => import('./pages/Home'));\nconst Catalog = lazy(() => import('./pages/Catalog'));\nconst RouteView = lazy(() => import('./pages/RouteView'));\n\nfunction App() {\n  return (\n    <GeolocationProvider>\n      <Router>\n        <Suspense fallback={<div>Loading...</div>}>\n          <Routes>\n            <Route path=\"/\" element={<Home />} />\n            <Route path=\"/catalog\" element={<Catalog />} />\n            <Route path=\"/route/:id\" element={<RouteView />} />\n          </Routes>\n        </Suspense>\n      </Router>\n    </GeolocationProvider>\n  );\n}\n\nexport default App;"
+    }
+  ]
+}

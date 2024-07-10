@@ -158,16 +158,16 @@ function getFileContent(filePath) {
 async function main() {
   const rootDirectory = await selectRootDirectory();
   const selectedItems = await selectFiles(rootDirectory);
-  const selectedFiles = getAllFiles(selectedItems);
+  const SourceCode = getAllFiles(selectedItems);
 
   let projectInfo = {
     rootDirectory: rootDirectory,
     projectStructure: getProjectStructure(rootDirectory),
-    selectedFiles: []
+    SourceCode: []
   };
 
-  for (const file of selectedFiles) {
-    projectInfo.selectedFiles.push({
+  for (const file of SourceCode) {
+    projectInfo.SourceCode.push({
       path: file,
       content: getFileContent(file)
     });
